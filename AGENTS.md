@@ -104,7 +104,16 @@ Implement the approved phase only.
 
 Do not add unrelated features, speculative abstractions, unnecessary AI functionality, or unrequested redesigns.
 
+Redesign work explicitly requested in `docs/DESIGN_SYSTEM.md` is approved scope, not an unrequested redesign.
+
 If a requirement suggests substantial additional cost or complexity, explain the trade-off before expanding scope.
+
+## UI
+
+- Before any UI change, read `docs/DESIGN_SYSTEM.md` and use only its documented tokens and components.
+- Describe a new component in `docs/DESIGN_SYSTEM.md` before implementing it.
+- Add golden tests for new or visually changed components and their principal states.
+- Visual effects must never obscure or alter the readability of prices, addresses, or totals.
 
 ## Completion reports
 
